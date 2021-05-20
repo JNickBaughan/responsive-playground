@@ -1,0 +1,47 @@
+html {
+  font-size: 16px;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+    Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue, Arial,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.account-container {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  max-width: 800px;
+}
+
+.account-card {
+  font-size: 2rem;
+  background-color: honeydew;
+  margin: auto 0;
+  height: 300px;
+  margin: 6px 3px;
+  display: grid;
+  grid-template-columns: 4fr 3fr 3fr 3fr;
+  grid-template-areas: "account balance nextPayment minPayment";
+}
+
+.account {
+  grid-area: account;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  font-size: 0.8em;
+}
+
+.balance {
+  grid-area: balance;
+  background-color: indigo;
+}
+
+.nextPayment {
+  grid-area: nextPayment;
+  background-color: lightblue;
+}
+
+.minPayment {
+  grid-area: minPayment;
+  background-color: lightcyan;
+}
